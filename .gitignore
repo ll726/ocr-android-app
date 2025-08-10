@@ -1,0 +1,25 @@
+# Buildozer files
+.buildozer/
+bin/
+buildozer_win/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+env/
+
+# API keys
+*key.json
+*api_key*
+
+# Test images
+*.png
+*.jpg
+*.jpeg
+
+# Debug files
+debug_*
