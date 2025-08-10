@@ -34,7 +34,18 @@ jobs:
           libjpeg-dev \
           zlib1g-dev \
           unzip \
-          openjdk-11-jdk
+          openjdk-11-jdk \
+          autoconf \
+          libtool \
+          pkg-config \
+          cmake
+          
+    - name: Setup Android SDK
+      uses: android-actions/setup-android@v3
+      with:
+        api-level: 30
+        build-tools: 30.0.3
+        ndk-version: 23.2.8568313
 
     - name: Install buildozer
       run: |
